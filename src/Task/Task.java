@@ -14,20 +14,6 @@ public class Task {
         this.statusTask = TaskStatus.NEW;
     }
 
-    public Task(int taskId, String nameTask, String descriptionTask, TaskStatus statusTask) {
-        this.taskId = taskId;
-        this.nameTask = nameTask;
-        this.descriptionTask = descriptionTask;
-        this.statusTask = statusTask;
-    }
-
-    public Task(int taskId, String nameTask, String descriptionTask) {
-        this.taskId = taskId;
-        this.nameTask = nameTask;
-        this.descriptionTask = descriptionTask;
-
-    }
-
     public int getId() {
         return taskId;
     }
