@@ -24,11 +24,11 @@ public class TaskManager {
     }
 
     //2b удаление всех задач
-    void removeAllTasks() {
+    public void removeAllTasks() {
         tasks.clear();
     }
 
-    void removeAllSubtasks() {
+    public void removeAllSubtasks() {
         subtasks.clear();
         for (Epic epic : epics.values()) {
             epic.getSubtaskIds().clear();
@@ -36,7 +36,7 @@ public class TaskManager {
         }
     }
 
-    void removeAllEpic() {
+    public void removeAllEpic() {
         epics.clear();
         subtasks.clear();
     }
