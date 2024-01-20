@@ -4,7 +4,8 @@ import Manager.*;
 public class Main {
 
     public static void main(String[] args) {
-        TaskManager manager = new TaskManager();
+        InMemoryTaskManager manager = new InMemoryTaskManager();
+        InMemoryHistoryManager historyManager = new InMemoryHistoryManager();
 
         Task task1 = new Task("Task_1", "Тренироваться");
         Task task2 = new Task("Task_2", "Заниматься");
@@ -52,6 +53,12 @@ public class Main {
         System.out.println(manager.getAllSubtasks());
         System.out.println(manager.getAllSubtasksOfEpic(epic1));
 
+        historyManager.add(task1);
+        historyManager.add(epic2);
+
+        System.out.println("отправили в историю");
+        System.out.println(historyManager.getHistory());
+
         manager.removeTaskById(task1Id);
         manager.removeEpicById(epic2Id);
         manager.removeSubtaskById(subtask2Id);
@@ -62,6 +69,11 @@ public class Main {
         System.out.println(manager.getAllSubtasks());
         System.out.println(manager.getAllSubtasksOfEpic(epic1));
 
+        System.out.println(historyManager.getHistory());
+
         System.out.println("Поехали!");
+
+
+
     }
 }
