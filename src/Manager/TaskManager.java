@@ -3,15 +3,18 @@ package Manager;
 import Task.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public interface TaskManager {
     //Получение списка всех задач
-    ArrayList<Task> getAllTasks();
+    List<Task> getAllTasks();
 
-    ArrayList<Subtask> getAllSubtasks();
+    List<Subtask> getAllSubtasks();
 
-    ArrayList<Epic> getAllEpic();
-    ArrayList<Task> getHistory();
+    List<Epic> getAllEpic();
+
+    //просмотр истории
+    List<Task> getHistory();
 
     //Удаление всех задач
     void removeAllTasks();
@@ -50,7 +53,4 @@ public interface TaskManager {
 
     //Получение списка всех подзадач определенного эпика
     ArrayList<Subtask> getAllSubtasksOfEpic(Epic epic);
-
-    //Просмотр истории
-
 }

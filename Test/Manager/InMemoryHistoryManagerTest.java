@@ -28,4 +28,13 @@ class InMemoryHistoryManagerTest {
             assertEquals(history, task,"не сохранилась история");
         }
     }
+    //проверка что в историю записывается только 10 задач
+    @Test
+    public void shouldBe10TasksInHistory() {
+        int expectedTasks = 10;
+        for (int i = 0; i <= 13; i++) {
+            historyManager.add(task);
+        }
+        assertEquals(expectedTasks, historyManager.getHistory().size(), "Задач больше 10");
+    }
 }

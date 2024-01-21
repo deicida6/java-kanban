@@ -2,14 +2,16 @@ package Manager;
 
 import Task.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.HashMap;
+import java.util.Map;
 
 public class InMemoryTaskManager implements TaskManager {
    private int idCount = 0;
    private final HistoryManager historyManager = Managers.getDefaultHistory();
-   private final HashMap<Integer, Task> tasks = new HashMap<>();
-   private final HashMap<Integer, Subtask> subtasks = new HashMap<>();
-   private final HashMap<Integer, Epic> epics = new HashMap<>();
+   private final Map<Integer, Task> tasks = new HashMap<>();
+   private final Map<Integer, Subtask> subtasks = new HashMap<>();
+   private final Map<Integer, Epic> epics = new HashMap<>();
 
     //2a получение списка задач
     @Override
@@ -29,7 +31,7 @@ public class InMemoryTaskManager implements TaskManager {
 
     @Override
     public ArrayList<Task> getHistory() {
-        return historyManager.getHistory();
+        return (ArrayList<Task>) historyManager.getHistory();
     }
 
     //2b удаление всех задач
@@ -56,16 +58,20 @@ public class InMemoryTaskManager implements TaskManager {
     //2c получение по идентификатору
     @Override
     public Task getTaskById(int id) {
+        historyManager.add(tasks.get(id));
         return tasks.get(id);
+
     }
 
     @Override
     public Epic getEpicById(int id) {
+        historyManager.add(epics.get(id));
         return epics.get(id);
     }
 
     @Override
     public Subtask getSubtaskById(int id) {
+        historyManager.add(subtasks.get(id));
         return subtasks.get(id);
     }
 
