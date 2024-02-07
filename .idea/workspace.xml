@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="2 коммит, техническое задание 4, замечания исправлены">
+      <changelist_data name="AndreyZhirnov" email="deicida6@yandex.ru" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Manager/InMemoryHistoryManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Manager/InMemoryTaskManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Manager/ManagersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Task/TaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager/HistoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager/InMemoryHistoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager/InMemoryTaskManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager/Managers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager/TaskManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task/Epic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task/Subtask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task/TaskStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task/TaskType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-kanban.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-kanban.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="AndreyZhirnov &lt;deicida6@yandex.ru&gt;" />
+        <option value="deicida6 &lt;150275443+deicida6@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2aUGBO5FYcuIMM9IjtvyR5EPPCw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddDifferentTaskAndGetOnId.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask.executor": "Run",
+    "JUnit.ManagersTest.shouldNotBeNullGetDefault.executor": "Run",
+    "JUnit.ManagersTest.shouldNotBeNullInGetDefaultHistory.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveEpicWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveSubtaskWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldNotBeAddEpicInEpic.executor": "Run",
+    "JUnit.TaskTest.shouldNotBeAddEpicToEpic.executor": "Run",
+    "JUnit.TaskTest.shouldNotBeAddSubtaskToEpic.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/deici/IdeaProjects/java-kanban1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Manager" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Manager" />
+      <recent name="Task" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory">
+    <configuration name="InMemoryHistoryManagerTest.shouldBe10TasksInHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryHistoryManagerTest" />
+      <option name="METHOD_NAME" value="shouldBe10TasksInHistory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryHistoryManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeSavedAllHistoryTasks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryTaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeAddSetIdTaskAndGenerationIdTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest.shouldBePositiveTaskWhenIdAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Task" />
+      <option name="MAIN_CLASS_NAME" value="Task.TaskTest" />
+      <option name="METHOD_NAME" value="shouldBePositiveTaskWhenIdAreEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest.shouldNotBeAddEpicToEpic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Task" />
+      <option name="MAIN_CLASS_NAME" value="Task.TaskTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAddEpicToEpic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory" />
+        <item itemvalue="JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual" />
+        <item itemvalue="JUnit.TaskTest.shouldNotBeAddEpicToEpic" />
+        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask" />
+        <item itemvalue="JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-249ae16d76d6-d0fa0211" />
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="" />
+      <created>1704365607487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704365607487</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="AndreyZhirnov" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="date">
+                    <value>
+                      <list>
+                        <option value="" />
+                        <option value="" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 коммит, 4 спринт" />
+    <MESSAGE value="1 коммит, техническое задание 4" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="1 коммит, техническое задание 4, выполнены все задаения" />
+    <MESSAGE value="2 коммит, техническое задание 4, замечания исправлены" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 коммит, техническое задание 4, замечания исправлены" />
+  </component>
+</project>
