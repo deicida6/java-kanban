@@ -31,7 +31,7 @@ public class InMemoryTaskManager implements TaskManager {
 
     @Override
     public List<Task> getHistory() {
-        return (ArrayList<Task>) historyManager.getHistory();
+        return historyManager.getHistory();
     }
 
     //2b удаление всех задач
@@ -125,14 +125,19 @@ public class InMemoryTaskManager implements TaskManager {
     @Override
     public void removeTaskById(int id) {
         tasks.remove(id);
+        historyManager.remove(id);
     }
 
     @Override
     public void removeEpicById(int id) {
         Epic epic = getEpicById(id);
-        for (int idSubtask: epic.getSubtaskIds()) {
-            subtasks.remove(idSubtask);
+        if(epic.getSubtaskIds()!=null){
+            for (int idSubtask: epic.getSubtaskIds()) {
+                subtasks.remove(idSubtask);
+                historyManager.remove(idSubtask);
+            }
         }
+        historyManager.remove(id);
         epics.remove(id);
     }
 
@@ -142,6 +147,7 @@ public class InMemoryTaskManager implements TaskManager {
         Epic epic = getEpicById(subtask.getEpicId());
         epic.getSubtaskIds().remove(Integer.valueOf(id));
         updateEpicStatus(epic);
+        historyManager.remove(id);
 
     }
 
@@ -150,7 +156,7 @@ public class InMemoryTaskManager implements TaskManager {
     public ArrayList<Subtask> getAllSubtasksOfEpic(Epic epic) {
         ArrayList<Subtask> listSubtasks = new ArrayList<>();
         for (Integer idSubtask : epic.getSubtaskIds()) {
-            listSubtasks.add(getSubtaskById(idSubtask));
+            listSubtasks.add(subtasks.get(idSubtask));
         }
         return listSubtasks;
 
@@ -165,10 +171,10 @@ public class InMemoryTaskManager implements TaskManager {
             return;
         }
         for (Integer idSub : epic.getSubtaskIds()) {
-            if (getSubtaskById(idSub).getStatusTask() == TaskStatus.NEW) {
+            if (subtasks.get(idSub).getStatusTask() == TaskStatus.NEW) {
                 newCount++;
             }
-            if (getSubtaskById(idSub).getStatusTask() == TaskStatus.DONE) {
+            if (subtasks.get(idSub).getStatusTask() == TaskStatus.DONE) {
                 doneCount++;
             }
         }

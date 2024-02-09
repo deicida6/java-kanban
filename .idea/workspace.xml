@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="добавление файлов которые изначально забыл добавить">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Manager/InMemoryHistoryManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Manager/InMemoryHistoryManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Manager/InMemoryTaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Manager/InMemoryTaskManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-kanban/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-kanban/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-kanban/Manager/HistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-kanban/Manager/HistoryManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-kanban/Manager/InMemoryHistoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-kanban/Manager/InMemoryHistoryManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-kanban/Manager/InMemoryTaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-kanban/Manager/InMemoryTaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java-kanban/Task/Epic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-kanban/Task/Epic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/java-kanban/Manager/InMemoryHistoryManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/java-kanban/Manager/InMemoryHistoryManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/java-kanban/Manager/InMemoryTaskManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/java-kanban/Manager/InMemoryTaskManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/java-kanban/Manager/ManagersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/java-kanban/Manager/ManagersTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/java-kanban/Task/TaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/java-kanban/Task/TaskTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/HistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/HistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/InMemoryHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/InMemoryHistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/InMemoryTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/InMemoryTaskManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +39,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,8 +51,18 @@
         <option value="deicida6 &lt;150275443+deicida6@users.noreply.github.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="InMemoryHistoryManagerTest.shouldBeInfinityTasksInHistory" />
+    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,39 +78,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.InMemoryTaskManagerTest.shouldBeAddDifferentTaskAndGetOnId.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManagersTest.shouldNotBeNullGetDefault.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManagersTest.shouldNotBeNullInGetDefaultHistory.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldBePositiveEpicWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldBePositiveSubtaskWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldBePositiveWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldNotBeAddEpicInEpic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldNotBeAddEpicToEpic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaskTest.shouldNotBeAddSubtaskToEpic.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/deici/IdeaProjects/java-kanban1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.InMemoryHistoryManagerTest.executor": "Coverage",
+    "JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeAddEpicInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeAddSubtaskInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeAddTasksInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeInfinityTasksInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeRemoveEpicInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeRemoveSubtaskInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeRemoveTasksInHistory.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks.executor": "Run",
+    "JUnit.InMemoryHistoryManagerTest.shouldNotDuplicateHistory.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.executor": "Coverage",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddDifferentTaskAndGetOnId.executor": "Debug",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddEpicInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask.executor": "Debug",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddSubtaskInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddTaskInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeChangeStatusEpicToInProgressWhenChangeStatusOnSubtask.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeChangeStatusTaskToInProgress.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeDeleteEpicInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeDeleteSubtaskInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeDeleteTaskInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldDoNotSaveOldIdINDeletedSubtaskInTaskManager.executor": "Run",
+    "JUnit.ManagersTest.shouldNotBeNullGetDefault.executor": "Run",
+    "JUnit.ManagersTest.shouldNotBeNullInGetDefaultHistory.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveEpicWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveSubtaskWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldBePositiveWhenIdAreEqual.executor": "Run",
+    "JUnit.TaskTest.shouldNotBeAddEpicInEpic.executor": "Run",
+    "JUnit.TaskTest.shouldNotBeAddEpicToEpic.executor": "Run",
+    "JUnit.TaskTest.shouldNotBeAddSubtaskToEpic.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "sprint__6-solution",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/deici/IdeaProjects/java-kanban1",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -97,40 +142,8 @@
       <recent name="Task" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory">
-    <configuration name="InMemoryHistoryManagerTest.shouldBe10TasksInHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-kanban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryHistoryManagerTest" />
-      <option name="METHOD_NAME" value="shouldBe10TasksInHistory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-kanban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryHistoryManagerTest" />
-      <option name="METHOD_NAME" value="shouldBeSavedAllHistoryTasks" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InMemoryTaskManagerTest.shouldDoNotSaveOldIdINDeletedSubtaskInTaskManager">
+    <configuration name="InMemoryTaskManagerTest.shouldBeChangeStatusEpicToInProgressWhenChangeStatusOnSubtask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
@@ -140,39 +153,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="Manager" />
       <option name="MAIN_CLASS_NAME" value="Manager.InMemoryTaskManagerTest" />
-      <option name="METHOD_NAME" value="shouldBeAddSetIdTaskAndGenerationIdTask" />
+      <option name="METHOD_NAME" value="shouldBeChangeStatusEpicToInProgressWhenChangeStatusOnSubtask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskTest.shouldBePositiveTaskWhenIdAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InMemoryTaskManagerTest.shouldBeChangeStatusTaskToInProgress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task.*" />
+          <option name="PATTERN" value="Manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Task" />
-      <option name="MAIN_CLASS_NAME" value="Task.TaskTest" />
-      <option name="METHOD_NAME" value="shouldBePositiveTaskWhenIdAreEqual" />
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryTaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeChangeStatusTaskToInProgress" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskTest.shouldNotBeAddEpicToEpic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InMemoryTaskManagerTest.shouldBeDeleteEpicInTaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Task.*" />
+          <option name="PATTERN" value="Manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Task" />
-      <option name="MAIN_CLASS_NAME" value="Task.TaskTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAddEpicToEpic" />
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryTaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeDeleteEpicInTaskManager" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryTaskManagerTest.shouldBeDeleteSubtaskInTaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryTaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeDeleteSubtaskInTaskManager" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryTaskManagerTest.shouldDoNotSaveOldIdINDeletedSubtaskInTaskManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-kanban" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Manager" />
+      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryTaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldDoNotSaveOldIdINDeletedSubtaskInTaskManager" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory" />
-        <item itemvalue="JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual" />
-        <item itemvalue="JUnit.TaskTest.shouldNotBeAddEpicToEpic" />
-        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask" />
-        <item itemvalue="JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks" />
+        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldDoNotSaveOldIdINDeletedSubtaskInTaskManager" />
+        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldBeChangeStatusEpicToInProgressWhenChangeStatusOnSubtask" />
+        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldBeChangeStatusTaskToInProgress" />
+        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldBeDeleteSubtaskInTaskManager" />
+        <item itemvalue="JUnit.InMemoryTaskManagerTest.shouldBeDeleteEpicInTaskManager" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +238,7 @@
       <set>
         <option value="jdk-11.0.21-corretto-11.0.21-249ae16d76d6-d0fa0211" />
         <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
       </set>
     </attachedChunks>
   </component>
@@ -213,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707304965026</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="добавление файлов которые изначально забыл добавить">
+      <option name="closed" value="true" />
+      <created>1707305381751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707305381751</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,5 +329,20 @@
     <MESSAGE value="2 коммит, техническое задание 4, замечания исправлены" />
     <MESSAGE value="добавление файлов которые изначально забыл добавить" />
     <option name="LAST_COMMIT_MESSAGE" value="добавление файлов которые изначально забыл добавить" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((HashMap)((InMemoryTaskManager)manager).tasks).entrySet().toArray()[0]" custom="Manager.InMemoryTaskManager,java.util.HashMap" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_kanban$InMemoryHistoryManagerTest.ic" NAME="InMemoryHistoryManagerTest Coverage Results" MODIFIED="1707482052633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Manager.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_kanban$InMemoryTaskManagerTest.ic" NAME="InMemoryTaskManagerTest Coverage Results" MODIFIED="1707494367859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Manager.*</FILTER>
+    </SUITE>
   </component>
 </project>
