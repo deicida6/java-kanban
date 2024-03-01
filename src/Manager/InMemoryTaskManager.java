@@ -8,10 +8,17 @@ import java.util.Map;
 
 public class InMemoryTaskManager implements TaskManager {
    private int idCount = 0;
-   private final HistoryManager historyManager = Managers.getDefaultHistory();
-   private final Map<Integer, Task> tasks = new HashMap<>();
-   private final Map<Integer, Subtask> subtasks = new HashMap<>();
-   private final Map<Integer, Epic> epics = new HashMap<>();
+   protected HistoryManager historyManager = Managers.getDefaultHistory();
+   protected static final Map<Integer, Task> tasks = new HashMap<>();
+   protected static final Map<Integer, Subtask> subtasks = new HashMap<>();
+   protected static final Map<Integer, Epic> epics = new HashMap<>();
+
+    public InMemoryTaskManager(HistoryManager historyManager) {
+        this.historyManager = historyManager;
+    }
+
+    public InMemoryTaskManager() {
+    }
 
     //2a получение списка задач
     @Override
@@ -165,7 +172,7 @@ public class InMemoryTaskManager implements TaskManager {
 
     //3a получение списка всех подзадач определенного эпика
     @Override
-    public ArrayList<Subtask> getAllSubtasksOfEpic(Epic epic) {
+    public List<Subtask> getAllSubtasksOfEpic(Epic epic) {
         ArrayList<Subtask> listSubtasks = new ArrayList<>();
         for (Integer idSubtask : epic.getSubtaskIds()) {
             listSubtasks.add(subtasks.get(idSubtask));

@@ -1,13 +1,17 @@
 import Task.*;
 import Manager.*;
 
+import java.io.File;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        TaskManager manager = new InMemoryTaskManager();
-        // дополнительное задание Спринт 6
+
+        File file = new File("save.csv");
+        TaskManager manager = new FileBackedTaskManager(file);
+        // дополнительное задание Спринт 7
+
         Task task1 = new Task("Task_1", "Тренироваться");
         Task task2 = new Task("Task_2", "Заниматься");
         int task1Id = manager.addTask(task1);
@@ -25,45 +29,13 @@ public class Main {
         int subtask2Id = manager.addSubtask(subtask2);
         int subtask3Id = manager.addSubtask(subtask3);
 
-        System.out.println("*****************************");
-        System.out.println("добавили задач");
-        System.out.println("*****************************");
-        System.out.println(manager.getAllTasks());
-        System.out.println(manager.getAllEpic());
-        System.out.println(manager.getAllSubtasksOfEpic(epic1));
-        System.out.println(manager.getAllSubtasksOfEpic(epic2));
+        TaskManager manager1 = new FileBackedTaskManager(file);
 
         System.out.println("*****************************");
-        System.out.println("по разному посмотрели задачи в истории 1");
+        System.out.println("Создали новый экземпляр таск менеджера используя файл");
         System.out.println("*****************************");
-        manager.getTaskById(task1Id);
-        manager.getTaskById(task2Id);
-        manager.getEpicById(epic1Id);
-        manager.getEpicById(epic2Id);
-        System.out.println(manager.getHistory());
-
-        System.out.println("*****************************");
-        System.out.println("по разному посмотрели задачи в истории 2");
-        System.out.println("*****************************");
-        manager.getSubtaskById(subtask1Id);
-        manager.getSubtaskById(subtask2Id);
-        manager.getSubtaskById(subtask3Id);
-        manager.getTaskById(task2Id);
-        System.out.println(manager.getHistory());
-
-        System.out.println("*****************************");
-        System.out.println("удалили задачи Таск2, Эпик1 с подзадачами");
-        System.out.println("*****************************");
-        manager.removeTaskById(task2Id);
-        manager.removeEpicById(epic1Id);
-
-        System.out.println(manager.getAllTasks());
-        System.out.println(manager.getAllEpic());
-        System.out.println(manager.getAllSubtasks());
-        System.out.println(manager.getAllSubtasksOfEpic(epic1));
-        System.out.println("*****************************");
-        System.out.println("Проверили удаление в истории");
-        System.out.println("*****************************");
-        System.out.println(manager.getHistory());
+        System.out.println(manager1.getAllTasks());
+        System.out.println(manager1.getAllEpic());
+        System.out.println(manager1.getAllSubtasks());
     }
 }

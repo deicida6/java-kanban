@@ -2,7 +2,6 @@ package Manager;
 
 import Task.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface TaskManager {
@@ -52,5 +51,5 @@ public interface TaskManager {
     void removeSubtaskById(int id);
 
     //Получение списка всех подзадач определенного эпика
-    ArrayList<Subtask> getAllSubtasksOfEpic(Epic epic);
+    List<Subtask> getAllSubtasksOfEpic(Epic epic);
 }
