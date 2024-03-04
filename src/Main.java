@@ -1,8 +1,7 @@
-import Task.*;
-import Manager.*;
+import task.*;
+import manager.*;
 
 import java.io.File;
-import java.util.List;
 
 public class Main {
 

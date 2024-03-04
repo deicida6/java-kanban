@@ -1,8 +1,8 @@
-package Manager;
+package manager;
 
 
-import Exceptions.*;
-import Task.*;
+import exceptions.*;
+import task.*;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
