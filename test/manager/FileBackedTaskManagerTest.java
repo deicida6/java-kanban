@@ -1,5 +1,6 @@
 package manager;
 
+import org.junit.jupiter.api.TestInstance;
 import task.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,30 +10,19 @@ import java.io.IOException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-class FileBackedTaskManagerTest {
-    protected Subtask createSubtask(int epicId) {
-        return new Subtask("name1", "description1",epicId);
-    }
-    protected Epic createEpic() {
-        return new Epic("name1", "description1");
-    }
-    protected Task createTask() {
-        return new Task("name1", "description1");
-    }
-    protected TaskManager manager;
-
-    File file;
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+class FileBackedTaskManagerTest extends TaskManagerTest<FileBackedTaskManager> {
+    File f;
 
     @BeforeEach
-    void beforeEach() {
-        file = new File("save.csv");
-        manager = new FileBackedTaskManager(file);
+    public void setUp() throws IOException {
+        f = File.createTempFile("testSave","csv");
+        manager = new FileBackedTaskManager(f);
     }
     @Test
     public void shouldSaveAndLoadEmptyFile() throws IOException {
         assertEquals(manager.getAllTasks(),manager.getHistory());
-        manager = Managers.getDefault(file);
+        manager = new FileBackedTaskManager(f);
         assertEquals(manager.getAllTasks(),manager.getHistory());
     }
 
@@ -43,8 +33,7 @@ class FileBackedTaskManagerTest {
         manager.addTask(task);
         manager.addTask(task1);
         assertEquals(List.of(task,task1), manager.getAllTasks());
-        manager = Managers.getDefault(file);
+        manager = new FileBackedTaskManager(f);
         assertEquals(List.of(task,task1), manager.getAllTasks());
     }
-
 }

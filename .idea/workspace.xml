@@ -4,38 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="Sprint_6 FinalTask, Исправление ошибок после ревью">
-      <change afterPath="$PROJECT_DIR$/Test/Manager/FileBackedTaskManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/ManagerLoadException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/ManagerSaveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/ManagerValidateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Manager/FileBackedTaskManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/data.csv" afterDir="false" />
+    <list default="true" id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="sprint_7-solution-in-file-manager, реализован класс FileBackedTaskManager, созданы тесты по методам сохранения и загрузки, в main реализовано доп задание">
+      <change afterPath="$PROJECT_DIR$/src/logic/EpicDurationUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/EpicStatusUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logic/TimeValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/manager/TaskManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Manager/ManagersTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/InMemoryTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/InMemoryTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/Managers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/ManagerLoadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ManagerLoadException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/ManagerValidateException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/FileBackedTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/FileBackedTaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/InMemoryHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/InMemoryHistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/InMemoryTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/InMemoryTaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Epic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Epic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Subtask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Subtask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/manager/FileBackedTaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/FileBackedTaskManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/manager/InMemoryHistoryManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/manager/InMemoryTaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/InMemoryTaskManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="module" />
-    </option>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,6 +57,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;deicida6&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1a0fb054-9db9-4998-9a74-9b4c88e5e68e" />
+        <option name="url" value="https://github.com/deicida6/java-kanban.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,16 +93,47 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
-    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyFile.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest and 1 more.executor": "Coverage",
+    "JUnit.FileBackedTaskManagerTest,correctlyWillBeClaculationIntersectionOfIntervals and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,getHistory and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeAddDifferentTaskAndGetOnId and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeAddEmptyHistory and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeAddEpicInTaskManager and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeAddSubtaskInTaskManager and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeAddTaskInTaskManager and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeChangeStatusEpicToInProgressWhenChangeStatusOnSubtask and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeChangeStatusTaskToInProgress and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeDeleteEpicInTaskManager and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeDeleteSubtaskInTaskManager and 1 more.executor": "Debug",
+    "JUnit.FileBackedTaskManagerTest,shouldBeDeleteTaskInTaskManager and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeEpicStatusIfAllSubtaskStatusDone and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeEpicStatusIfAllSubtaskStatusNew and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusDoneAndNew and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusInProgress and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldBeInfinityTasksInHistory and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest,shouldDoNotSaveOldIdINDeletedSubtaskInTaskManager and 1 more.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest.shouldBeInfinityTasksInHistory.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyFile.executor": "Debug",
     "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyHistory.executor": "Run",
     "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyTasks.executor": "Run",
+    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadSomeTasks.executor": "Run",
     "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadWithoutSubtasks.executor": "Run",
     "JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory.executor": "Run",
     "JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.getHistory.executor": "Run",
     "JUnit.InMemoryTaskManagerTest.shouldBeAddDifferentTaskAndGetOnId.executor": "Run",
     "JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeAddTaskInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeDeleteEpicInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeDeleteSubtaskInTaskManager.executor": "Run",
+    "JUnit.InMemoryTaskManagerTest.shouldBeEpicStatusIfAllSubtaskStatusNew.executor": "Debug",
+    "JUnit.InMemoryTaskManagerTest.shouldBeInfinityTasksInHistory.executor": "Run",
     "JUnit.ManagersTest.shouldNotBeNullGetDefault.executor": "Run",
     "JUnit.ManagersTest.shouldNotBeNullInGetDefaultHistory.executor": "Run",
+    "JUnit.TaskManagerTest.executor": "Run",
+    "JUnit.TaskManagerTest.shouldBeInfinityTasksInHistory.executor": "Coverage",
     "JUnit.TaskTest.shouldBePositiveEpicWhenIdAreEqual.executor": "Run",
     "JUnit.TaskTest.shouldBePositiveSubtaskWhenIdAreEqual.executor": "Run",
     "JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual.executor": "Run",
@@ -92,6 +141,7 @@
     "JUnit.TaskTest.shouldNotBeAddEpicInEpic.executor": "Run",
     "JUnit.TaskTest.shouldNotBeAddEpicToEpic.executor": "Run",
     "JUnit.TaskTest.shouldNotBeAddSubtaskToEpic.executor": "Run",
+    "JUnit.manager in java-kanban.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -100,9 +150,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "sprint__7-solution-in-file-manager",
+    "git-widget-placeholder": "sprint__8-solution-time-and-duration",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/deici/Desktop/myProject/java-kanban",
+    "last_opened_file_path": "C:/Users/zhirnov_as/Documents/MyOneDrive/OneDrive/Документы/Project/java-kanban",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -120,108 +170,126 @@
       <recent name="Manager" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="manager" />
       <recent name="Manager" />
       <recent name="Task" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadWithoutSubtasks">
-    <configuration name="FileBackedTaskManagerTest.shouldSaveAndLoadEmptyFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FileBackedTaskManagerTest,shouldBeAddEmptyHistory and 1 more">
+    <configuration name="FileBackedTaskManagerTest,correctlyWillBeClaculationIntersectionOfIntervals and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.FileBackedTaskManagerTest" />
-      <option name="METHOD_NAME" value="shouldSaveAndLoadEmptyFile" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="manager" />
+      <option name="MAIN_CLASS_NAME" value="manager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="correctlyWillBeClaculationIntersectionOfIntervals" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="manager.FileBackedTaskManagerTest,correctlyWillBeClaculationIntersectionOfIntervals" />
+        <pattern testClass="manager.InMemoryTaskManagerTest,correctlyWillBeClaculationIntersectionOfIntervals" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileBackedTaskManagerTest.shouldSaveAndLoadEmptyHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileBackedTaskManagerTest,shouldBeAddEmptyHistory and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.FileBackedTaskManagerTest" />
-      <option name="METHOD_NAME" value="shouldSaveAndLoadEmptyHistory" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="manager" />
+      <option name="MAIN_CLASS_NAME" value="manager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeAddEmptyHistory" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="manager.FileBackedTaskManagerTest,shouldBeAddEmptyHistory" />
+        <pattern testClass="manager.InMemoryTaskManagerTest,shouldBeAddEmptyHistory" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileBackedTaskManagerTest.shouldSaveAndLoadEmptyTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileBackedTaskManagerTest,shouldBeEpicStatusIfAllSubtaskStatusNew and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.FileBackedTaskManagerTest" />
-      <option name="METHOD_NAME" value="shouldSaveAndLoadEmptyTasks" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="manager" />
+      <option name="MAIN_CLASS_NAME" value="manager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeEpicStatusIfAllSubtaskStatusNew" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="manager.FileBackedTaskManagerTest,shouldBeEpicStatusIfAllSubtaskStatusNew" />
+        <pattern testClass="manager.InMemoryTaskManagerTest,shouldBeEpicStatusIfAllSubtaskStatusNew" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileBackedTaskManagerTest.shouldSaveAndLoadWithoutSubtasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusDoneAndNew and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.FileBackedTaskManagerTest" />
-      <option name="METHOD_NAME" value="shouldSaveAndLoadWithoutSubtasks" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="manager" />
+      <option name="MAIN_CLASS_NAME" value="manager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeEpicStatusIfSubtaskStatusDoneAndNew" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="manager.FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusDoneAndNew" />
+        <pattern testClass="manager.InMemoryTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusDoneAndNew" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InMemoryHistoryManagerTest.shouldBe10TasksInHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusInProgress and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-kanban" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.InMemoryHistoryManagerTest" />
-      <option name="METHOD_NAME" value="shouldBe10TasksInHistory" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="manager" />
+      <option name="MAIN_CLASS_NAME" value="manager.TaskManagerTest" />
+      <option name="METHOD_NAME" value="shouldBeEpicStatusIfSubtaskStatusInProgress" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="manager.FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusInProgress" />
+        <pattern testClass="manager.InMemoryTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusInProgress" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadWithoutSubtasks" />
-        <item itemvalue="JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyFile" />
-        <item itemvalue="JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyTasks" />
-        <item itemvalue="JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyHistory" />
-        <item itemvalue="JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory" />
+        <item itemvalue="JUnit.FileBackedTaskManagerTest,shouldBeAddEmptyHistory and 1 more" />
+        <item itemvalue="JUnit.FileBackedTaskManagerTest,shouldBeAddEmptyHistory and 1 more" />
+        <item itemvalue="JUnit.FileBackedTaskManagerTest,shouldBeAddEmptyHistory and 1 more" />
+        <item itemvalue="JUnit.FileBackedTaskManagerTest,correctlyWillBeClaculationIntersectionOfIntervals and 1 more" />
+        <item itemvalue="JUnit.FileBackedTaskManagerTest,shouldBeEpicStatusIfSubtaskStatusDoneAndNew and 1 more" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-249ae16d76d6-d0fa0211" />
-        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
         <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -250,7 +318,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709019682170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sprint_7-solution-in-file-manager, реализован класс FileBackedTaskManager, созданы тесты по методам сохранения и загрузки, в main реализовано доп задание">
+      <option name="closed" value="true" />
+      <created>1709318892002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709318892002</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sprint_7-solution-in-file-manager, реализован класс FileBackedTaskManager, созданы тесты по методам сохранения и загрузки, в main реализовано доп задание">
+      <option name="closed" value="true" />
+      <created>1709537567565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709537567565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +343,16 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="main" />
@@ -270,6 +364,11 @@
         <entry key="User">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="AndreyZhirnov" />
@@ -312,6 +411,18 @@
     <MESSAGE value="2 коммит, техническое задание 4, замечания исправлены" />
     <MESSAGE value="добавление файлов которые изначально забыл добавить" />
     <MESSAGE value="Sprint_6 FinalTask, Исправление ошибок после ревью" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sprint_6 FinalTask, Исправление ошибок после ревью" />
+    <MESSAGE value="sprint_7-solution-in-file-manager, реализован класс FileBackedTaskManager, созданы тесты по методам сохранения и загрузки, в main реализовано доп задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint_7-solution-in-file-manager, реализован класс FileBackedTaskManager, созданы тесты по методам сохранения и загрузки, в main реализовано доп задание" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_kanban$FileBackedTaskManagerTest_and_1_more.ic" NAME="FileBackedTaskManagerTest and 1 more Coverage Results" MODIFIED="1710848474249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>manager.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_kanban$manager_in_java_kanban.ic" NAME="manager in java-kanban Coverage Results" MODIFIED="1710743756672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>manager.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java_kanban$TaskManagerTest_shouldBeInfinityTasksInHistory.ic" NAME="TaskManagerTest.shouldBeInfinityTasksInHistory Coverage Results" MODIFIED="1710583371024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>manager.*</FILTER>
+    </SUITE>
   </component>
 </project>

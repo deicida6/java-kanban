@@ -36,13 +36,30 @@ public class Epic extends Task {
 
     @Override
     public String toString() {
-        return "\nTask.Epic{" +
-                "id = '" + getId() + '\'' +
-                ", Task.TaskType = '" + TaskType.EPIC + '\'' +
-                ", Name = '" + getNameTask() + '\'' +
-                ", Status = '" + getStatusTask() + '\'' +
-                ", Description = '" + getDescriptionTask() + '\'' +
-                ", subtaskIds= " + subtaskIds +
-                '}';
+        if(getStartTime() == null){
+            return "\nTask.Epic{" +
+                    "id = '" + getId() + '\'' +
+                    ", Task.TaskType = '" + TaskType.EPIC + '\'' +
+                    ", Name = '" + getNameTask() + '\'' +
+                    ", Status = '" + getStatusTask() + '\'' +
+                    ", Description = '" + getDescriptionTask() + '\'' +
+                    ", subtaskIds= " + subtaskIds +
+                    ", startTime=" + "n/a" +
+                    ", duration=" + "n/a" +
+                    ", endTime=" + "n/a" +
+                    '}';
+        } else {
+            return "\nTask.Epic{" +
+                    "id = '" + getId() + '\'' +
+                    ", Task.TaskType = '" + TaskType.EPIC + '\'' +
+                    ", Name = '" + getNameTask() + '\'' +
+                    ", Status = '" + getStatusTask() + '\'' +
+                    ", Description = '" + getDescriptionTask() + '\'' +
+                    ", subtaskIds= " + subtaskIds +
+                    ", startTime=" + getStartTime() +
+                    ", duration=" + getDuration() +
+                    ", endTime=" + getEndTime() +
+                    '}';
+        }
     }
 }

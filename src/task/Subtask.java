@@ -1,9 +1,15 @@
 package task;
 
-import java.util.Objects;
 
+import java.util.Objects;
+import logic.*;
 public class Subtask extends Task {
     private final int epicId;
+
+    public Subtask(String nameTask, String descriptionTask, int epicId, String startTime, String duration) {
+        super(nameTask, descriptionTask, startTime, duration);
+        this.epicId = epicId;
+    }
 
     public Subtask(String nameTask, String descriptionTask, int epicId) {
         super(nameTask, descriptionTask);
@@ -35,13 +41,31 @@ public class Subtask extends Task {
 
     @Override
     public String toString() {
-        return "\nTask.Subtask{" +
-                "id = '" + getId() + '\'' +
-                ", Task.TaskType = '" + TaskType.SUBTASK + '\'' +
-                ", NameTask = '" + getNameTask() + '\'' +
-                ", StatusTask = '" + getStatusTask() + '\'' +
-                ", DescriptionTask = '" + getDescriptionTask() + '\'' +
-                ", epicId = " + epicId +
-                "}";
+        if(getStartTime() == null){
+            return "\nTask.Subtask{" +
+                    "id = '" + getId() + '\'' +
+                    ", Task.TaskType = '" + TaskType.SUBTASK + '\'' +
+                    ", NameTask = '" + getNameTask() + '\'' +
+                    ", StatusTask = '" + getStatusTask() + '\'' +
+                    ", DescriptionTask = '" + getDescriptionTask() + '\'' +
+                    ", epicId = " + epicId +
+                    ", startTime=" + "n/a" +
+                    ", duration=" + "n/a" +
+                    ", endTime=" + "n/a" +
+                    "}";
+        } else {
+            return "\nTask.Subtask{" +
+                    "id = '" + getId() + '\'' +
+                    ", Task.TaskType = '" + TaskType.SUBTASK + '\'' +
+                    ", NameTask = '" + getNameTask() + '\'' +
+                    ", StatusTask = '" + getStatusTask() + '\'' +
+                    ", DescriptionTask = '" + getDescriptionTask() + '\'' +
+                    ", epicId = " + epicId +
+                    ", startTime=" + getStartTime() +
+                    ", duration=" + getDuration() +
+                    ", endTime=" + getEndTime() +
+                    "}";
+        }
+
     }
 }

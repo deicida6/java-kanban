@@ -2,6 +2,7 @@ package manager;
 
 import task.*;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface TaskManager {
@@ -52,4 +53,5 @@ public interface TaskManager {
 
     //Получение списка всех подзадач определенного эпика
     List<Subtask> getAllSubtasksOfEpic(Epic epic);
+    Collection<? extends Task> getPrioritizedTasks();
 }
