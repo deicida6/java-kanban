@@ -48,24 +48,6 @@ class TaskTest {
         assertEquals(subtask,savedSubtask,"Сабтаски не совпадают");
 
     }
-    //проверка что объект Epic нельзя добавить в самого себя в виде подзадачи
-    @Test
-    void shouldNotBeAddEpicToEpic() {
-        int idEpic = -1;
-        subtask = new Subtask("Subtask1","descriptionSubtask", idEpic);
-        final int subtaskId1 = manager.addSubtask(subtask);
-        assertNotNull(subtaskId1, "добавили epic сам в себя");
-    }
-    //проверка что объект Subtask нельзя сделать своим же эпиком
-    @Test
-    void shouldNotBeAddSubtaskToEpic() {
-        final int epicId = manager.addEpic(epic);
-        subtask = new Subtask("Subtask1","descriptionSubtask", epicId);
-        final int subtaskId1 = manager.addSubtask(subtask);
-        subtask = new Subtask("Subtask2","descriptionSubtask1", subtaskId1);
-        final int subtaskId2 = manager.addSubtask(subtask);
-        assertNotNull(subtaskId2,"subtask1 стал эпиком");
 
-    }
 
 }

@@ -1,10 +1,12 @@
 package task;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Epic extends Task {
     private final ArrayList<Integer> subtaskIds;
+    private LocalDateTime endTime;
 
     public Epic(String nameTask, String descriptionTask) {
         super(nameTask, descriptionTask);
@@ -15,7 +17,16 @@ public class Epic extends Task {
         return subtaskIds;
     }
 
-   @Override
+    @Override
+    public LocalDateTime getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(LocalDateTime endTime) {
+        this.endTime = endTime;
+    }
+
+    @Override
    public TaskType getType() {
         return TaskType.EPIC;
     }
@@ -36,13 +47,30 @@ public class Epic extends Task {
 
     @Override
     public String toString() {
-        return "\nTask.Epic{" +
-                "id = '" + getId() + '\'' +
-                ", Task.TaskType = '" + TaskType.EPIC + '\'' +
-                ", Name = '" + getNameTask() + '\'' +
-                ", Status = '" + getStatusTask() + '\'' +
-                ", Description = '" + getDescriptionTask() + '\'' +
-                ", subtaskIds= " + subtaskIds +
-                '}';
+        if(getStartTime() == null){
+            return "\nTask.Epic{" +
+                    "id = '" + getId() + '\'' +
+                    ", Task.TaskType = '" + TaskType.EPIC + '\'' +
+                    ", Name = '" + getNameTask() + '\'' +
+                    ", Status = '" + getStatusTask() + '\'' +
+                    ", Description = '" + getDescriptionTask() + '\'' +
+                    ", subtaskIds= " + subtaskIds +
+                    ", startTime=" + "n/a" +
+                    ", duration=" + "n/a" +
+                    ", endTime=" + "n/a" +
+                    '}';
+        } else {
+            return "\nTask.Epic{" +
+                    "id = '" + getId() + '\'' +
+                    ", Task.TaskType = '" + TaskType.EPIC + '\'' +
+                    ", Name = '" + getNameTask() + '\'' +
+                    ", Status = '" + getStatusTask() + '\'' +
+                    ", Description = '" + getDescriptionTask() + '\'' +
+                    ", subtaskIds= " + subtaskIds +
+                    ", startTime=" + getStartTime() +
+                    ", duration=" + getDuration() +
+                    ", endTime=" + getEndTime() +
+                    '}';
+        }
     }
 }

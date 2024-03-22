@@ -2,7 +2,13 @@ package manager;
 
 import task.*;
 
+
+import java.util.Collection;
+
+import java.util.ArrayList;
+
 import java.util.List;
+import java.util.Map;
 
 public interface TaskManager {
     //Получение списка всех задач
@@ -50,6 +56,11 @@ public interface TaskManager {
 
     void removeSubtaskById(int id);
 
+    void epicDurationUpdater(Epic epic, Map<Integer, Subtask> subtaskMap);
+    void epicStatusUpdater(Epic epic, Map<Integer, Subtask> subtaskMap);
+    Task timeIntersectionCheck(Task task, Collection<? extends Task> tasksTreeSet);
+
     //Получение списка всех подзадач определенного эпика
     List<Subtask> getAllSubtasksOfEpic(Epic epic);
+    Collection<? extends Task> getPrioritizedTasks();
 }
