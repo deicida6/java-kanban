@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="Sprint_6 FinalTask, Исправление ошибок после ревью">
+    <list default="true" id="b88ec423-b134-4510-b059-7ab7f0780cd9" name="Changes" comment="sprint_8-solution-time-and-duration исправлена видимость методов обновления статуса, времени у эпиков и проверки на пересечение">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/ManagerLoadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ManagerLoadException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/ManagerSaveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ManagerSaveException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/FileBackedTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/FileBackedTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/InMemoryHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/InMemoryHistoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/InMemoryTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/InMemoryTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/Managers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Epic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Epic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Subtask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Subtask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/manager/FileBackedTaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/FileBackedTaskManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/manager/InMemoryTaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/InMemoryTaskManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/task/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/task/TaskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +44,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;deicida6&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1a0fb054-9db9-4998-9a74-9b4c88e5e68e" />
+        <option name="url" value="https://github.com/deicida6/java-kanban.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -75,44 +75,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "true",
-    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyFile.executor": "Run",
-    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyHistory.executor": "Run",
-    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyTasks.executor": "Run",
-    "JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadWithoutSubtasks.executor": "Run",
-    "JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory.executor": "Run",
-    "JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks.executor": "Run",
-    "JUnit.InMemoryTaskManagerTest.shouldBeAddDifferentTaskAndGetOnId.executor": "Run",
-    "JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask.executor": "Run",
-    "JUnit.ManagersTest.shouldNotBeNullGetDefault.executor": "Run",
-    "JUnit.ManagersTest.shouldNotBeNullInGetDefaultHistory.executor": "Run",
-    "JUnit.TaskTest.shouldBePositiveEpicWhenIdAreEqual.executor": "Run",
-    "JUnit.TaskTest.shouldBePositiveSubtaskWhenIdAreEqual.executor": "Run",
-    "JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual.executor": "Run",
-    "JUnit.TaskTest.shouldBePositiveWhenIdAreEqual.executor": "Run",
-    "JUnit.TaskTest.shouldNotBeAddEpicInEpic.executor": "Run",
-    "JUnit.TaskTest.shouldNotBeAddEpicToEpic.executor": "Run",
-    "JUnit.TaskTest.shouldNotBeAddSubtaskToEpic.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "sprint__8-solution-time-and-duration",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/deici/Desktop/myProject/java-kanban",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyFile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyHistory.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadEmptyTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FileBackedTaskManagerTest.shouldSaveAndLoadWithoutSubtasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InMemoryHistoryManagerTest.shouldBe10TasksInHistory.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InMemoryHistoryManagerTest.shouldBeSavedAllHistoryTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InMemoryTaskManagerTest.shouldBeAddDifferentTaskAndGetOnId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InMemoryTaskManagerTest.shouldBeAddSetIdTaskAndGenerationIdTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ManagersTest.shouldNotBeNullGetDefault.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ManagersTest.shouldNotBeNullInGetDefaultHistory.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldBePositiveEpicWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldBePositiveSubtaskWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldBePositiveTaskWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldBePositiveWhenIdAreEqual.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldNotBeAddEpicInEpic.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldNotBeAddEpicToEpic.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskTest.shouldNotBeAddSubtaskToEpic.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint__8-solution-time-and-duration&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/deici/Desktop/myProject/java-kanban&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -254,7 +254,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709019682170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sprint_8-solution-time-and-duration исправлены комментарии, пришлось полностью удалить ветку т.к. накосячил с коммитами и задублировал ветку.">
+      <option name="closed" value="true" />
+      <created>1711125977953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711125977953</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sprint_8-solution-time-and-duration исправил методы, убрал из интерфейса, удалил PR случайно, т.к. не получалось запушить изза случайно созданного дублирования ветки в том коммите, понимаю что нельзя удалять PR, извините">
+      <option name="closed" value="true" />
+      <created>1711175304990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711175304990</updated>
+    </task>
+    <task id="LOCAL-00005" summary="sprint_8-solution-time-and-duration исправлена видимость методов обновления статуса, времени у эпиков и проверки на пересечение">
+      <option name="closed" value="true" />
+      <created>1711176955116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711176955116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,6 +340,9 @@
     <MESSAGE value="2 коммит, техническое задание 4, замечания исправлены" />
     <MESSAGE value="добавление файлов которые изначально забыл добавить" />
     <MESSAGE value="Sprint_6 FinalTask, Исправление ошибок после ревью" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sprint_6 FinalTask, Исправление ошибок после ревью" />
+    <MESSAGE value="sprint_8-solution-time-and-duration исправлены комментарии, пришлось полностью удалить ветку т.к. накосячил с коммитами и задублировал ветку." />
+    <MESSAGE value="sprint_8-solution-time-and-duration исправил методы, убрал из интерфейса, удалил PR случайно, т.к. не получалось запушить изза случайно созданного дублирования ветки в том коммите, понимаю что нельзя удалять PR, извините" />
+    <MESSAGE value="sprint_8-solution-time-and-duration исправлена видимость методов обновления статуса, времени у эпиков и проверки на пересечение" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprint_8-solution-time-and-duration исправлена видимость методов обновления статуса, времени у эпиков и проверки на пересечение" />
   </component>
 </project>
