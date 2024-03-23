@@ -210,8 +210,7 @@ public class InMemoryTaskManager implements TaskManager {
         return prioritiziedTasks;
     }
     // обновление startTime и duration
-    @Override
-    public void epicDurationUpdater(Epic epic, Map<Integer, Subtask> subtaskMap) {
+    void epicDurationUpdater(Epic epic, Map<Integer, Subtask> subtaskMap) {
         if (subtaskMap.containsKey(epic.getSubtaskIds().stream().findFirst())) {
 
             LocalDateTime epicStartTime = Objects.requireNonNull(epic.getSubtaskIds().stream()
@@ -234,8 +233,7 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
     // обновление статуса Эпика по его сабтаскам
-    @Override
-    public void epicStatusUpdater(Epic epic, Map<Integer, Subtask> subtaskMap) {
+     void epicStatusUpdater(Epic epic, Map<Integer, Subtask> subtaskMap) {
 
         Collection<Integer> listOfSubTasks = epic.getSubtaskIds();
         int counterSameStatus = 0;
@@ -262,8 +260,7 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
     // проверка пересечения по времени
-    @Override
-    public Task timeIntersectionCheck(Task task, Collection<? extends Task> tasksTreeSet) {
+    Task timeIntersectionCheck(Task task, Collection<? extends Task> tasksTreeSet) {
         if (task.getStartTime() != null) {
             LocalDateTime taskStartTime = task.getStartTime();
             LocalDateTime taskEndTime = task.getEndTime();

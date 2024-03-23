@@ -56,10 +56,6 @@ public interface TaskManager {
 
     void removeSubtaskById(int id);
 
-    void epicDurationUpdater(Epic epic, Map<Integer, Subtask> subtaskMap);
-    void epicStatusUpdater(Epic epic, Map<Integer, Subtask> subtaskMap);
-    Task timeIntersectionCheck(Task task, Collection<? extends Task> tasksTreeSet);
-
     //Получение списка всех подзадач определенного эпика
     List<Subtask> getAllSubtasksOfEpic(Epic epic);
     Collection<? extends Task> getPrioritizedTasks();
