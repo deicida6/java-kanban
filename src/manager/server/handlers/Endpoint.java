@@ -1,4 +1,4 @@
-package handlers;
+package manager.server.handlers;
 
 public enum Endpoint {
     GET_TASKS,
@@ -17,5 +17,6 @@ public enum Endpoint {
     POST_EPIC_CREATE,
     DELETE_EPIC_BY_ID,
     GET_HISTORY,
-    GET_PRIORITIZED_TASKS
+    GET_PRIORITIZED_TASKS,
+    NOT_FOUND
 }

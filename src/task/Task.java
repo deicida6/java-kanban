@@ -27,6 +27,14 @@ public class Task {
         this.startTime = LocalDateTime.parse(startTime,formatter);
         this.duration = Duration.ofMinutes(Long.parseLong(duration));
     }
+    public Task(String nameTask, String descriptionTask, String duration) {
+        this.nameTask = nameTask;
+        this.descriptionTask = descriptionTask;
+        this.statusTask = TaskStatus.NEW;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        this.startTime = LocalDateTime.now();
+        this.duration = Duration.ofMinutes(Long.parseLong(duration));
+    }
 
     public int getId() {
         return taskId;
