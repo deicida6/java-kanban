@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b9234f-ccf7-4afc-9d56-c6c0bfa6c4a3" name="Changes" comment="sprint_8-solution-time-and-duration исправлена видимость методов обновления статуса, времени у эпиков и проверки на пересечение">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapter/DurationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapter/DurationAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapter/LocalDateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapter/LocalDateAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/InMemoryTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/InMemoryTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/Managers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manager/server/HttpTaskServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/server/HttpTaskServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/server/handlers/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/server/handlers/Endpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/server/handlers/SendResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/server/handlers/SendResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/server/handlers/TasksHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/server/handlers/TasksHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/manager/InMemoryTaskManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/InMemoryTaskManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/manager/server/handlers/TasksHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/server/handlers/TasksHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "deicida6"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;deicida6&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -52,9 +41,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2eB0hhri5wkj4hOIDTHWTxJJAmi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -65,42 +54,42 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HttpTaskServer.executor": "Run",
-    "JUnit.InMemoryTaskManagerTest.executor": "Run",
-    "JUnit.InMemoryTaskManagerTest.getTaskID.executor": "Run",
-    "JUnit.TasksHandlerTest.delEpic.executor": "Run",
-    "JUnit.TasksHandlerTest.delSubtask.executor": "Run",
-    "JUnit.TasksHandlerTest.delTask.executor": "Debug",
-    "JUnit.TasksHandlerTest.executor": "Run",
-    "JUnit.TasksHandlerTest.getEpicById.executor": "Run",
-    "JUnit.TasksHandlerTest.getEpicSubtaskById.executor": "Run",
-    "JUnit.TasksHandlerTest.getEpics.executor": "Run",
-    "JUnit.TasksHandlerTest.getHistory.executor": "Run",
-    "JUnit.TasksHandlerTest.getPrioritizedTasks.executor": "Run",
-    "JUnit.TasksHandlerTest.getSubtaskById.executor": "Run",
-    "JUnit.TasksHandlerTest.getSubtasks.executor": "Run",
-    "JUnit.TasksHandlerTest.getTasks.executor": "Run",
-    "JUnit.TasksHandlerTest.getTasksById.executor": "Debug",
-    "JUnit.TasksHandlerTest.postCreateEpic.executor": "Run",
-    "JUnit.TasksHandlerTest.postCreateSubtask.executor": "Run",
-    "JUnit.TasksHandlerTest.postCreateTask.executor": "Run",
-    "JUnit.TasksHandlerTest.postUpdateSubtask.executor": "Run",
-    "JUnit.TasksHandlerTest.postUpdateTask.executor": "Run",
-    "JUnit.manager.server.handlers in java-kanban.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "sprint__9-solution-http-api",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/deici/Desktop/myProject/java-kanban/lib/gson-2.9.0.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HttpTaskServer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InMemoryTaskManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.InMemoryTaskManagerTest.getTaskID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.delEpic.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.delSubtask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.delTask.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TasksHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getEpicById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getEpicSubtaskById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getEpics.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getHistory.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getPrioritizedTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getSubtaskById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getSubtasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getTasks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.getTasksById.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.TasksHandlerTest.postCreateEpic.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.postCreateSubtask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.postCreateTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.postUpdateSubtask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TasksHandlerTest.postUpdateTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.manager.server.handlers in java-kanban.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint__9-solution-http-api&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/deici/Desktop/myProject/java-kanban/lib/gson-2.9.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
